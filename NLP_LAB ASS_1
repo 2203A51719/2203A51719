@@ -1,0 +1,21 @@
+import nltk
+from nltk.tokenize import word_tokenize, sent_tokenize
+nltk.download('punkt', quiet=True)
+text = "Hello there! How are you doing today? NLP is fascinating."
+sentences = sent_tokenize(text)
+print("Sentence Tokens:")
+for i, sentence in enumerate(sentences, 1):
+    print(f"Sentence {i}: {sentence}")
+words = word_tokenize(text)
+print("\nWord Tokens:")
+print(words)
+Sentence Tokens:
+Sentence 1: Hello there!
+Sentence 2: How are you doing today?
+Sentence 3: NLP is fascinating.
+
+Word Tokens:
+['Hello', 'there', '!', 'How', 'are', 'you', 'doing', 'today', '?', 'NLP', 'is', 'fascinating', '.']
+
+[2]
+0s
